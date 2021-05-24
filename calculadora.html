@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="calculadora.css">
+    <link rel="icon" href="img/logo.png">
+</head>
+
+<body id="fondo">
+    <form class="formulario" action="" name="forms">
+        <input class="texto" type="text" name="screen" id="answer" readonly onmousedown="return false">
+
+        <input class="borrar" type="button" value="📁" onclick="abrir()">
+        <input class="borrar" type="button" value="🎨" onclick="color()">
+        <input class="borrar" type="button" value="🗑️" onclick="forms.screen.value=' '">
+        <input class="operadores" type="button" value="÷" onclick="forms.screen.value+='/'">
+
+        <input class="numeros" type="button" value="7" onclick="forms.screen.value+='7'">
+        <input class="numeros" type="button" value="8" onclick="forms.screen.value+='8'">
+        <input class="numeros" type="button" value="9" onclick="forms.screen.value+='9'">
+        <input class="operadores" type="button" value="x" onclick="forms.screen.value+='*'">
+
+        <input class="numeros" type="button" value="4" onclick="forms.screen.value+='4'">
+        <input class="numeros" type="button" value="5" onclick="forms.screen.value+='5'">
+        <input class="numeros" type="button" value="6" onclick="forms.screen.value+='6'">
+        <input class="operadores" type="button" value="-" onclick="forms.screen.value+='-'">
+
+        <input class="numeros" type="button" value="1" onclick="forms.screen.value+='1'">
+        <input class="numeros" type="button" value="2" onclick="forms.screen.value+='2'">
+        <input class="numeros" type="button" value="3" onclick="forms.screen.value+='3'">
+        <input class="operadores" type="button" value="+" onclick="forms.screen.value+='+'">
+
+        <input class="numeros cero" type="button" value="0" onclick="forms.screen.value+='0'">
+        <input class="numeros" type="button" value="." onclick="forms.screen.value+='.'">
+        <input class="igual" type="button" value="=" onclick="forms.screen.value= eval(forms.screen.value)">
+
+    </form>
+
+    <script src="calculadora.js" type="text/javascript"></script>
+
+</body>
+
+</html>
+
+

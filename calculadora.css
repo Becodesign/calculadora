@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&family=Mulish:wght@200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #eeeeee;    
+    /* background: #750092;     */
+    color: black;
+}
+
+.formulario {
+    width: 300px;
+    background: #E3E3E3;
+    margin: 50px auto;
+    padding: 10px;
+    border: #D7D7D7 1px solid;
+    box-shadow: 0px 0px 10px rgb(201, 201, 201); 
+   
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(100px,100px) repeat(5, 1fr);   
+}
+
+input {
+    /* padding: 25px 10px 25px 10px; */
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.cero {
+    grid-column:span 2;
+}
+
+.texto {
+    width: 100%;
+    background-color:#D7D7D7;    
+    grid-column:span 4;
+    font-size: 40px;
+    text-align: right;
+    cursor:auto;
+}
+
+.borrar {
+    background-color: #ADADAD;
+}
+
+.operadores {
+    background-color: #4285F4;    
+}
+
+.igual {
+    background-color: #2569DB;    
+}
+
+.numeros {
+    background-color:#D7D7D7;    
+}
+
+.operadores:hover {
+    background-color: #296AD6;      
+}
+
+.numeros:hover {
+    background-color: #BDBDBD;   
+}
+
+.igual:hover {
+    background-color: #104BAD;      
+}
+
+.borrar:hover {
+    background-color: #8A8A8A;   
+}
+
+.numeros:active {
+    background-color: #999999;   
+}
+.borrar:active {
+    background-color: #C9C9C9;   
+}
+
+.operadores:active {
+    background-color: #639EFF; 
+}
+
+.igual:active {
+    background-color: #4285F4;    
+}
+
+
